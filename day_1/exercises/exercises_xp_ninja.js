@@ -33,7 +33,30 @@ function compareBMI(personA, personB) {
 console.log("Person 1 BMI:", person1.calculateBMI().toFixed(2));
 console.log("Person 2 BMI:", person2.calculateBMI().toFixed(2));
 console.log(compareBMI(person1, person2));
+
 // ===== Exercise 2
+
+function calculateAverage(gradesList) {
+    let sum = 0;
+
+    for (let grade of gradesList) {
+        sum += grade;
+    }
+
+    return sum / gradesList.length;
+}
+
+function findAvg(gradesList) {
+    let avg = calculateAverage(gradesList);
+
+    if (avg >= 65) {
+        console.log("You passed");
+    } else {
+        console.log("You failed");
+    }
+}
+
+findAvg([50, 70, 80]);
 
 // ===== Exercise 3
 
@@ -41,3 +64,4 @@ console.log(compareBMI(person1, person2));
 
 
 // ===== Exercise ...
+

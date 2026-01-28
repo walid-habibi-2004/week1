@@ -83,5 +83,71 @@ console.log(changeEnough(4.25, [25, 20, 5, 0]))
 
 // ===== Exercise 4
 
+function hotelCost() {
+    let numberNihgts
+    while (true) {
+        numberNihgts = Number(prompt("what the number of nights stay in hotel"))
+        if (!isNaN(numberNihgts) && numberNihgts > 0)
+            break;
+        else
+            alert("please enter valid number of nights")
+    }
+
+    const pricesNights = 140
+    const totalPrices = numberNihgts * pricesNights
+    return totalPrices
+}
+
+function planeRideCost() {
+    let destination
+    while(true){
+        destination = String(prompt("Where do you want to go?").trim())
+        if (destination && isNaN(destination))
+            break
+        else
+            alert("please enter valid destination : ")
+    }
+
+    const dest = destination.toLowerCase()
+
+    switch (dest) {
+        case "london":
+            return 183
+        case "paris":
+            return 220
+        default:
+            return 300
+    }
+}
+
+function rentalCarCost() {
+    let rentCar
+    while(true) {
+        rentCar = Number(prompt("how many day you rent the car : "))
+        if(!isNaN(rentCar) && rentCar > 0)
+            break
+        else
+            alert("please enter the valid number of rent car days : ")
+    }
+
+    const carCost = 40
+    if (rentCar > 10)
+        return carCost * rentCar * 0.95
+    else
+        return carCost*rentCar
+
+}
+
+function totalVacationCost() {
+    const hotel = hotelCost();
+    const plane = planeRideCost();
+    const car = rentalCarCost();
+
+    console.log(`The hotel cost: $${hotel}, the plane tickets cost: $${plane}, the car cost: $${car}`);
+    return hotel + plane + car;
+}
+
+console.log("The total cost of your vacation is: $" + total);
 
 // ===== Exercise ...
+

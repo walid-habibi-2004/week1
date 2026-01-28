@@ -149,5 +149,56 @@ function totalVacationCost() {
 
 console.log("The total cost of your vacation is: $" + total);
 
-// ===== Exercise ...
+// ===== Exercise 5
+
+const containerDiv = document.getElementById("container");
+console.log(containerDiv);
+
+const peteLi = document.querySelector('.list li:nth-child(2)');
+peteLi.textContent = "Richard";
+
+const secondUl = document.querySelectorAll(".list")[1];
+const secondLi = secondUl.querySelectorAll("li")[1]
+secondUl.removeChild(secondLi)
+
+const myName = "walid"
+const firstLis = document.querySelectorAll('.list li:first-child')
+firstLis.forEach(li => li.textContent = myName)
+
+const addClass = document.querySelectorAll('.list')
+addClass.forEach(ul => {
+    ul.classList.add("student_list")
+})
+
+addClass[0].classList.add("university", "attendance")
+console.log(addClass);
+
+containerDiv.style.background = "lightblue"
+containerDiv.style.padding = "15px"
+
+const allList = document.querySelectorAll("li")
+allList.forEach(li => {
+    if (li.textContent === "Dan")
+        li.style.display = "none"
+})
+
+allList.forEach(li => {
+    if (li.textContent === "Richard") {
+        li.style.border = "2px solid red"
+
+    }
+})
+
+const getBody = document.getElementsByTagName("body")[0]
+getBody.style.fontSize = "25px"
+
+// // Bonus
+if(containerDiv.style.background === "lightblue") {
+    const users = document.querySelectorAll('.list li')
+    const userName = []
+
+    users.forEach(li => userName.push(li.textContent));
+    alert("Hello " + userName.join(" and "))
+}
+
 

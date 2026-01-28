@@ -201,4 +201,23 @@ if(containerDiv.style.background === "lightblue") {
     alert("Hello " + userName.join(" and "))
 }
 
+// ===== Exercise 6
+
+const navBar  = document.getElementById("navBar")
+navBar.setAttribute("id", "socialNetworkNavigation")
+
+const ul = document.querySelector("#socialNetworkNavigation ul")
+const addLi = document.createElement("li")
+const text = document.createTextNode("Logout")
+addLi.appendChild(text)
+ul.appendChild(addLi)
+console.log(ul);
+
+
+const firstLi = ul.firstElementChild;
+const lastLi = ul.lastElementChild;
+
+console.log(firstLi.textContent);
+console.log(lastLi.textContent);
+
 

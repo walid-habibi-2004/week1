@@ -14,6 +14,10 @@ if (wordNot !== -1 && wordBad !== -1 && wordBad > wordNot) {
 
 // ====== Daily Challenge 2
 
+for(let i = 0; i <= 6; i++){
+    console.log("* ".repeat(i));
+}
+
 let n = 6
 for(let i = 1; i <= n; i++){
     let line = ""

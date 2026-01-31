@@ -49,6 +49,53 @@ shuffleBtn.addEventListener('click', function () {
     document.getElementById('story').textContent = randomStory;
 })
 // ====== Daily Challenge 2
+// html challenge 2
+// <!DOCTYPE html>
+// <html lang="en">
 
-// ====== Daily Challenge 3
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <style>
+//         body {
+//             font-family: Arial, sans-serif;
+//             padding: 20px;
+//         }
 
+//         input {
+//             padding: 10px;
+//             font-size: 16px;
+//             width: 250px;
+//         }
+//     </style>
+// </head>
+
+// <body>
+//     <h2>Input ghir l7rouf</h2>
+
+//     <form id="letterForm">
+//         <label for="letterInput">Ktb ghir l7rouf:</label><br><br>
+//         <input type="text" id="letterInput" placeholder="Ktb hna">
+//         <button type="submit">Submit</button>
+//     </form>
+
+//     <p id="output"></p>
+
+//     <script src="challenges.js"></script>
+// </body>
+
+// </html>
+
+const form = document.getElementById('letterForm');
+const input = document.getElementById('letterInput');
+const output = document.getElementById('output');
+
+input.addEventListener('input', function () {
+    this.value = this.value.replace(/[^a-zA-Z]/g, '');
+});
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    output.textContent = "You entered: " + input.value;
+});

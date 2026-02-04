@@ -9,3 +9,4 @@ const mergeWords = (word) => {
 console.log(mergeWords('Hello')());
 console.log(mergeWords('There')('is')('no')('spoon.')());
 console.log(mergeWords('JavaScript')('is')('fun!')()); 
+

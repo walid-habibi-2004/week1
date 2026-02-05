@@ -35,5 +35,34 @@ console.log(section)
 
 // ====== Daily Challenge 2
 
+function frame() {
+    let words = prompt("Enter words separated by commas");
+    let arr = words.split(",");
+
+    let max = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].trim();
+        if (arr[i].length > max) {
+            max = arr[i].length;
+        }
+    }
+
+    let width = max + 4;
+
+    console.log("*".repeat(width));
+
+    for (let i = 0; i < arr.length; i++) {
+        let spaces = max - arr[i].length;
+        console.log("* " + arr[i] + " ".repeat(spaces) + " *");
+    }
+
+    console.log("*".repeat(width));
+}
+
+frame();
+
+
 // ====== Daily Challenge 3
+
 

@@ -1,1 +1,45 @@
+body {
+  margin: 0;
+  background: #afafaf;
+}
 
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.tools {
+    width: 200px;
+    padding: 10px;
+}
+
+#colors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.color {
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#clear {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#board {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+}
+
+.square{
+    border: 1px solid #ddd;
+    background-color: white;
+}

@@ -1,1 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.concert-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('rear-view-large-group-music-fans-front-stage-music-concert-by-night-copy-space_637285-623.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.drum-pads-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    z-index: 10;
+    padding: 20px;
+    width: 100%;
+}
+
+.pad {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    transition: all 0.1s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.pad:hover {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+}
+
+.pad.active {
+    background: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1);
+}
+
+.key-letter {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.sound-name {
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}

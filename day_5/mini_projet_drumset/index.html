@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drumset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="concert-background">
+        <div class="stage-lights"></div>
+        <div class="crowd-overlay"></div>
+        
+        <div class="drum-pads-container">
+            <div class="pad" data-key="a">
+                <div class="key-letter">A</div>
+                <div class="sound-name">Boom</div>
+            </div>
+            <div class="pad" data-key="s">
+                <div class="key-letter">S</div>
+                <div class="sound-name">Clap</div>
+            </div>
+            <div class="pad" data-key="d">
+                <div class="key-letter">D</div>
+                <div class="sound-name">HiHat</div>
+            </div>
+            <div class="pad" data-key="f">
+                <div class="key-letter">F</div>
+                <div class="sound-name">Kick</div>
+            </div>
+            <div class="pad" data-key="g">
+                <div class="key-letter">G</div>
+                <div class="sound-name">OpenHat</div>
+            </div>
+            <div class="pad" data-key="h">
+                <div class="key-letter">H</div>
+                <div class="sound-name">Ride</div>
+            </div>
+            <div class="pad" data-key="j">
+                <div class="key-letter">J</div>
+                <div class="sound-name">Snare</div>
+            </div>
+            <div class="pad" data-key="k">
+                <div class="key-letter">K</div>
+                <div class="sound-name">Tink</div>
+            </div>
+            <div class="pad" data-key="l">
+                <div class="key-letter">L</div>
+                <div class="sound-name">Tom</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="a" src="sounds/sounds_boom.wav"></audio>
+    <audio id="s" src="sounds/sounds_clap.wav"></audio>
+    <audio id="d" src="sounds/sounds_hihat.wav"></audio>
+    <audio id="f" src="sounds/sounds_kick.wav"></audio>
+    <audio id="g" src="sounds/sounds_openhat.wav"></audio>
+    <audio id="h" src="sounds/sounds_ride.wav"></audio>
+    <audio id="j" src="sounds/sounds_snare.wav"></audio>
+    <audio id="k" src="sounds/sounds_tink.wav"></audio>
+    <audio id="l" src="sounds/sounds_tom.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
